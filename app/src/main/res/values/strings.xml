@@ -3,4 +3,5 @@
     <string name="title_activity_contact_list">ContactListActivity</string>
     <string name="title_activity_contact_detail_activity.kt">ContactDetailActivity.kt</string>
     <string name="title_activity_contact_detail">ContactDetailActivity</string>
+    <string name="title_activity_add_contact">AddContactActivity</string>
 </resources>
