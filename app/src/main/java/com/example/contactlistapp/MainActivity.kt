@@ -17,6 +17,9 @@ import com.example.contactlistapp.ui.theme.ContactListAppTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
         setContent {
             Row() {
                 val text = remember {
@@ -27,6 +30,7 @@ class MainActivity : ComponentActivity() {
                 })
                 Button(onClick = {
                     var intent = Intent(this@MainActivity, ContactListActivity::class.java)
+                    intent.putExtra("username", text.value)
                     startActivity(intent)
                 }) {
                     Text("Login", modifier = Modifier.weight(1f))
